@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Test 360 View</title>
+    
+    <!-- Importar CSS y JavaScript de Magic360 -->
+    <link href="magic360-trial/magic360/magic360.css" rel="stylesheet" type="text/css" media="screen"/>
+    <script src="magic360-trial/magic360/magic360.js" type="text/javascript"></script>
+    
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test 360 View - Drag to Rotate</h1>
+        
+        <!-- Contenedor Magic360 -->
+        <div class="app-figure">
+            <!-- 
+                Configuración:
+                - columns: 180 (número total de imágenes)
+                - hint-text: "Drag to spin" (texto de ayuda)
+                - magnify: false (desactivar zoom)
+                - spin: "drag" (activar rotación por arrastre)
+            -->
+            <a id="spin-1" class="Magic360" 
+               data-options="columns: 180; hint-text: Drag to spin; magnify: false; spin: drag;"
+               href="C:/Users/Usuario/Documents/Coding/Projects/Test360View/BingoTestImages/Bingo-01.png">
+                <img src="C:/Users/Usuario/Documents/Coding/Projects/Test360View/BingoTestImages/Bingo-01.png">
+            </a>
+        </div>
+    </div>
+</body>
